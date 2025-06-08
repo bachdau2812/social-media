@@ -1,0 +1,187 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="a39cb24a-cb66-4dd2-b927-321544ab854f" name="Changes" comment="" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Interface" />
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
+  <component name="ProblemsViewState">
+    <option name="selectedTabId" value="DEPENDENCY_CHECKER_PROBLEMS_TAB" />
+  </component>
+  <component name="ProjectColorInfo">{
+  &quot;associatedIndex&quot;: 1
+}</component>
+  <component name="ProjectId" id="2xSF4OQbBDyVAJJ3QzU3FwUOG9M" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;Application.ApiGatewayApplication.executor&quot;: &quot;Run&quot;,
+    &quot;Application.ChatServiceApplication.executor&quot;: &quot;Run&quot;,
+    &quot;Application.ErrorHandlersControlFlow.executor&quot;: &quot;Run&quot;,
+    &quot;Application.FeedServiceApplication.executor&quot;: &quot;Run&quot;,
+    &quot;Application.HotAndColdStream.executor&quot;: &quot;Run&quot;,
+    &quot;Application.IdGenerator.executor&quot;: &quot;Run&quot;,
+    &quot;Application.IdentityServiceApplication.executor&quot;: &quot;Run&quot;,
+    &quot;Application.MatchServiceApplication.executor&quot;: &quot;Run&quot;,
+    &quot;Application.Merge.executor&quot;: &quot;Run&quot;,
+    &quot;Application.Merge_Zip.executor&quot;: &quot;Run&quot;,
+    &quot;Application.NotificationServiceApplication.executor&quot;: &quot;Run&quot;,
+    &quot;Application.PostServiceApplication.executor&quot;: &quot;Run&quot;,
+    &quot;Application.ProfileServiceApplication.executor&quot;: &quot;Run&quot;,
+    &quot;Application.Retry.executor&quot;: &quot;Run&quot;,
+    &quot;Application.SearchServiceApplication.executor&quot;: &quot;Run&quot;,
+    &quot;Application.Test.executor&quot;: &quot;Run&quot;,
+    &quot;Application.TimeOut_First.executor&quot;: &quot;Run&quot;,
+    &quot;Maven.chat-service [clean].executor&quot;: &quot;Run&quot;,
+    &quot;Maven.feed-service [clean].executor&quot;: &quot;Run&quot;,
+    &quot;Maven.identity-service [clean].executor&quot;: &quot;Run&quot;,
+    &quot;Maven.identity-service [validate].executor&quot;: &quot;Run&quot;,
+    &quot;Maven.notification-service [clean].executor&quot;: &quot;Run&quot;,
+    &quot;Maven.post-service [clean].executor&quot;: &quot;Run&quot;,
+    &quot;Maven.profile-service [clean].executor&quot;: &quot;Run&quot;,
+    &quot;Maven.search-service [clean].executor&quot;: &quot;Run&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
+    &quot;last_opened_file_path&quot;: &quot;D:/Learning/Javaaa/Learn_Backend/Spring_WebFlux/social_app/match-service/src/main/java/com/dauducbach/match_service/configuration&quot;,
+    &quot;project.structure.last.edited&quot;: &quot;Libraries&quot;,
+    &quot;project.structure.proportion&quot;: &quot;0.0&quot;,
+    &quot;project.structure.side.proportion&quot;: &quot;0.0&quot;
+  }
+}</component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="D:\Learning\Javaaa\Learn_Backend\Spring_WebFlux\social_app\match-service\src\main\java\com\dauducbach\match_service\configuration" />
+      <recent name="D:\Learning\Javaaa\Learn_Backend\Spring_WebFlux\social_app\search-service\src\main\java\com\dauducbach\search_service\dto\request" />
+      <recent name="D:\Learning\Javaaa\Learn_Backend\Spring_WebFlux\social_app\search-service\src\main\java\com\dauducbach\search_service\dto\response" />
+      <recent name="D:\Learning\Javaaa\Learn_Backend\Spring_WebFlux\social_app\profile-service\src\main\java\com\dauducbach\profile_service\configuration" />
+      <recent name="D:\Learning\Javaaa\Learn_Backend\Spring_WebFlux\social_app\search-service\src\main\java\com\dauducbach\search_service\configuration" />
+    </key>
+    <key name="MoveClassesOrPackagesDialog.RECENTS_KEY">
+      <recent name="com.dauducbach" />
+    </key>
+    <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="com.dauducbach.match_service.entity" />
+      <recent name="com.dauducbach.match_service.configuration" />
+      <recent name="com.dauducbach.match_service.dto.response" />
+      <recent name="com.dauducbach.match_service.service" />
+      <recent name="com.dauducbach.search_service.configuration" />
+    </key>
+  </component>
+  <component name="RunDashboard">
+    <option name="configurationTypes">
+      <set>
+        <option value="Application" />
+      </set>
+    </option>
+  </component>
+  <component name="RunManager" selected="Application.ApiGatewayApplication">
+    <configuration name="ApiGatewayApplication" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.dauducbach.api_gateway.ApiGatewayApplication" />
+      <module name="api-gateway" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.dauducbach.api_gateway.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="NotificationServiceApplication" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.dauducbach.NotificationServiceApplication" />
+      <module name="notification-service" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.dauducbach.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="PostServiceApplication" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.dauducbach.PostServiceApplication" />
+      <module name="post-service" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.dauducbach.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="ProfileServiceApplication" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.dauducbach.ProfileServiceApplication" />
+      <module name="profile-service" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.dauducbach.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="SearchServiceApplication" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.dauducbach.SearchServiceApplication" />
+      <module name="search-service" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.dauducbach.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <list>
+      <item itemvalue="Application.ApiGatewayApplication" />
+      <item itemvalue="Application.ProfileServiceApplication" />
+      <item itemvalue="Application.NotificationServiceApplication" />
+      <item itemvalue="Application.PostServiceApplication" />
+      <item itemvalue="Application.SearchServiceApplication" />
+    </list>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Application.ApiGatewayApplication" />
+        <item itemvalue="Application.SearchServiceApplication" />
+        <item itemvalue="Application.ProfileServiceApplication" />
+        <item itemvalue="Application.PostServiceApplication" />
+        <item itemvalue="Application.NotificationServiceApplication" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="a39cb24a-cb66-4dd2-b927-321544ab854f" name="Changes" comment="" />
+      <created>1747923376692</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1747923376692</updated>
+    </task>
+    <servers />
+  </component>
+</project>

@@ -1,0 +1,8 @@
+echo # Java
+**/target/
+*.class
+*.log
+
+# Secrets
+**/social-app.json
+.env > .gitignore

@@ -1,0 +1,77 @@
+server:
+  port: 8888
+
+app:
+  api-prefix: /social/v1
+
+spring:
+  application:
+    name: api-gateway
+
+  data:
+    redis:
+      host: localhost
+      port: 6370
+      password: ${REDIS_PASSWORD}
+      timeout: 2000
+
+  cloud:
+    gateway:
+      server:
+        webflux:
+          routes:
+            - id: identity_service
+              uri: http://localhost:8080
+              predicates:
+                - Path=/social/v1/identity/**
+              filters:
+                - StripPrefix=2
+
+            - id: profile_service
+              uri: http://localhost:8081
+              predicates:
+                - Path=/social/v1/profile/**
+              filters:
+                - StripPrefix=2
+
+            - id: notification_service
+              uri: http://localhost:8082
+              predicates:
+                - Path=/social/v1/notification/**
+              filters:
+                - StripPrefix=2
+
+            - id: chat_service
+              uri: http://localhost:8083
+              predicates:
+                - Path=/social/v1/chat/**
+              filters:
+                - StripPrefix=2
+
+            - id: post_service
+              uri: http://localhost:8084
+              predicates:
+                - Path=/social/v1/post/**
+              filters:
+                - StripPrefix=2
+
+            - id: feed_service
+              uri: http://localhost:8085
+              predicates:
+                - Path=/social/v1/feed/**
+              filters:
+                - StripPrefix=2
+
+            - id: search_service
+              uri: http://localhost:8086
+              predicates:
+                - Path=/social/v1/search/**
+              filters:
+                - StripPrefix=2
+
+            - id: match_service
+              uri: http://localhost:8087
+              predicates:
+                - Path=/social/v1/match/**
+              filters:
+                - StripPrefix=2

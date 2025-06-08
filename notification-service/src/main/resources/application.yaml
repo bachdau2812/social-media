@@ -1,0 +1,84 @@
+server:
+  port: 8082
+
+spring:
+  application:
+    name: notification-service
+
+  webflux:
+    base-path: /notification
+    exception-detail-logging: true
+
+  data:
+    mongodb:
+      uri: ${MONGODB_URI_NOTIFICATION_SERVICE}
+
+    redis:
+      host: localhost
+      port: 6370
+      password: ${REDIS_PASSWORD}
+      timeout: 2000
+
+  kafka:
+    bootstrap-servers: localhost:9092
+    producer:
+      key-serializer: org.apache.kafka.common.serialization.StringSerializer
+      value-serializer: org.springframework.kafka.support.serializer.JsonSerializer
+
+    consumer:
+      group-id: default-group
+      auto-offset-reset: earliest
+      key-deserializer: org.apache.kafka.common.serialization.StringDeserializer
+      value-deserializer: org.springframework.kafka.support.serializer.JsonDeserializer
+      properties:
+        spring.json.trusted.packages: "com.dauducbach.event"
+
+brevo:
+  api-key: ${BREVO_API_KEY}
+  api-url: https://api.brevo.com/v3/smtp/email
+
+app:
+  datacenter-id: 2
+  worker-id: 1
+
+#firebase:
+#  type: "service_account"
+#  project-id: "social-app-4d91f"
+#  private-key-id: "cf92838467195b564ab514f57d7120ae2bac0aea"
+#  private-key: |
+#    -----BEGIN PRIVATE KEY-----
+#    MIIEvQIBADANBgkqhkiG9w0BAQEFAASCBKcwggSjAgEAAoIBAQCwCqkK5bNNIho9
+#    e+tb2PBx3kL2yW+Uuh89vxVkx3TcigkLgl1ZhlDJHH+ZHNvM07qCy01Zy+rUyvij
+#    VIyOIQWrVo2J7WibZOLaaWPBBwpgwqwIW26uvLZnDEYF2PDteTjYo2DNIyVrzrKx
+#    JbPq9u+Gqx3nGkGB6Bsnqtu2Om1H3vXpVDUDI93gaoNgKQQTrfwrb2+PqKb0/YNb
+#    gSiv4HP5BuW9xN5dk2lVkU8KModZyWtPNgXfo5QhX3Qtnb+dYodQT22U6BpvpFno
+#    TgIEbVyK5+A61rcIp2BVLxKjCzFYFEoYSttEuxXV+67nXuhEQ3Q6begb8VOl3Qyc
+#    ELpqTCCjAgMBAAECggEAQIfP2nJEDTDEjKg5qMP3s83lHyDM+ahWXmSGu5gPwu4I
+#    jcL+ZBxDzczYCzDUc5tjYaGTm6iPzuwOQ5TxJwJ82QdTv+0abOgI7kY2rmHd0IVb
+#    2X5mrr/3XwPVQTx6aJqIl4UgLWJGS+QLhbtL3gQh3mwofHgX7j4+ggZ0HrMBLxgz
+#    c/0stF/kdac1n3gHsx/uAIdFmI+Wj7I7c0shjjKSG7e3No0FUu1xHL8c6aDY6Gmk
+#    4O9w9T78WOIncSJjwIZZ/S4JbaNog/cDfHYBGnjowxLQ+fmGiIZC52M79/cJLasb
+#    2QoQDDees+OYD8TfLF5sm0lifaiQYaGTc0MVgd4e5QKBgQDyASR94gcCCKU3SCMG
+#    vJLaA9pajNkyg0KM5irVaXb2qfQ3wwIPOPxWn2v0R5oQu9h+MqYLx1WVzK0WH1rd
+#    kTsZ+doIiuqqtvhdQXJpLsZFi98UsBwE5zFz7rLeRHem85TmaSKuDFwMjX9e+l1B
+#    5hqog7HOj80NshQZ4YQrmM7R1wKBgQC6OPF7G4s3aqz7az83lIsJ2oC+StbWnJz6
+#    19ZUXn/HcPN1JEUT3ZL8aqpZEuoFO1wZIbH/gvq++cGmekvCxxWkRo3KfWS1q5SQ
+#    prFWyvbgOS9Avcs+r5XCe4IptgmNMAoMUUgk+COWA7vXAXN9s3jckzZZuANH+DUu
+#    wcojK2kmFQKBgQDvYffx2XIrLdgX3fBfyorMw0DrjyWN1M8wxsCaB8/YYPclbW2N
+#    F0ZsfRfxNB6O7PFSq9EaF5xuKF8SYgOk5fL7V+23w4orQgBdZs7Agrc3tgr90NJ2
+#    eyas0fH28O0WpR2l6VuXpLws4o6aqbcz52R5SoPImvAv2vYNP8lYwrfaUwKBgCX/
+#    EGaKDDHWdk0maNOyX1w3VSV+p69KbU1RVM4KKhBLn6E7MU0IXMFcEj3yegVvQy9t
+#    jKAR3Y+x7i1FrsejT2shajTyuOXIiJurJ2wKJa1Cfb27/AhiUzBHext/pRtFvgcd
+#    XpcMelZVlLId/a6cPADlmKVdwm2g21ka+V+Lr/yxAoGAd3vjndOzvy+6oEN4xRyB
+#    wYgZZIk6uOAWMD0JjxuXu3vs2d+/2mWoRgWV4hA3pW3t8md6RjQ4JEyox6YHy8W0
+#    u1pnYobZ9t3+ODtRkKyhLv9bI5n3XD3Bn5yfxIQ6KRB5lkI/GKVMNYhAeqlKCbnU
+#    IONlgHA5lVDJwqZKT1K4lF4=
+#    -----END PRIVATE KEY-----
+#  client-email: "firebase-adminsdk-fbsvc@social-app-4d91f.iam.gserviceaccount.com"
+#  client-id: "102263732445890415930"
+#  auth-uri: "https://accounts.google.com/o/oauth2/auth"
+#  token-uri: "https://oauth2.googleapis.com/token"
+#  auth-provider-x509-cert-url: "https://www.googleapis.com/oauth2/v1/certs"
+#  client-x509-cert-url: "https://www.googleapis.com/robot/v1/metadata/x509/firebase-adminsdk-fbsvc%40social-app-4d91f.iam.gserviceaccount.com"
+#  universe-domain: "googleapis.com"
+

@@ -1,0 +1,56 @@
+server:
+  port: 8080
+
+spring:
+  application:
+    name: identity-service
+
+  webflux:
+    base-path: /identity
+    exception-detail-logging: true
+
+  r2dbc:
+    url: "r2dbc:mysql://localhost:3306/web-flux?sslMode=disabled"
+    username: ${R2DBC_USERNAME}
+    password: ${R2DBC_PASSWORD}
+    pool:
+      enabled: false
+
+  data:
+    redis:
+      host: localhost
+      port: 6370
+      password: ${REDIS_PASSWORD}
+      timeout: 2000
+
+  kafka:
+    bootstrap-servers: localhost:9092
+    producer:
+      key-serializer: org.apache.kafka.common.serialization.StringSerializer
+      value-serializer: org.springframework.kafka.support.serializer.JsonSerializer
+
+    consumer:
+      group-id: default-group
+      auto-offset-reset: earliest
+      key-deserializer: org.apache.kafka.common.serialization.StringDeserializer
+      value-deserializer: org.springframework.kafka.support.serializer.JsonDeserializer
+      properties:
+        spring.json.trusted.packages: "com.dauducbach.event"
+
+
+jwt:
+  signerKey: ${JWT_SIGNER_KEY}
+  valid-duration: 3600        # in second
+  refreshable-duration: 36000 # in second
+
+app:
+  services:
+    profile: http://localhost:8081/profile
+    notification: http://localhost:8082/notification
+
+  datacenter-id: 3
+  worker-id: 2
+
+logging:
+  level:
+    org.springframework.security: DEBUG
