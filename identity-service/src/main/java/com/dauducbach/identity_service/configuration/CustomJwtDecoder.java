@@ -19,6 +19,11 @@ public class CustomJwtDecoder implements ReactiveJwtDecoder {
     public Mono<Jwt> decode(String token) throws JwtException {
         try {
             SignedJWT signedJWT = SignedJWT.parse(token);
+            JWSVerifier jwsVerifier = new MACVerifier(SIGNER_KEY.getBytes());
+
+            if (!signedJWT.verify(jwsVerifier)) {
+                return Mono.error(new RuntimeException("Invalid Signature!"));
+            }
 
             Jwt jwt = new Jwt(
                     token,
