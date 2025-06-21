@@ -11,6 +11,9 @@ import java.text.ParseException;
 
 @Component
 public class CustomJwtDecoder implements ReactiveJwtDecoder {
+    @NonFinal
+    @Value("${jwt.signerKey}")
+    private String SIGNER_KEY;
 
     @Override
     public Mono<Jwt> decode(String token) throws JwtException {
