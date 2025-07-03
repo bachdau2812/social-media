@@ -56,14 +56,12 @@ public class AuthenticationFilter implements GlobalFilter, Ordered {
 
     @Override
     public Mono<Void> filter(ServerWebExchange exchange, GatewayFilterChain chain) {
-        log.info("In filter");
         if(isPublicEndpoint(exchange.getRequest())) {
             String path = exchange.getRequest().getURI().getRawPath();
             return chain.filter(exchange);
         }
 
         String token = extractToken(exchange);
-        log.info("Token: {}", token);
         String endpoint = exchange.getRequest().getURI().getRawPath();
 
         return webClient.post()
@@ -74,7 +72,6 @@ public class AuthenticationFilter implements GlobalFilter, Ordered {
                 .retrieve()
                 .onStatus(HttpStatusCode::isError, clientResponse -> Mono.error(new RuntimeException("Invalid token")))
                 .bodyToMono(new ParameterizedTypeReference<ApiResponse<IntrospectResponse>>() {})
-                .doOnSuccess(introspectResponseApiResponse -> log.info("ApiResponse: {}", introspectResponseApiResponse))
                 .map(ApiResponse::getResult)
                 .map(IntrospectResponse::isValid)
                 .flatMap(isValid -> {

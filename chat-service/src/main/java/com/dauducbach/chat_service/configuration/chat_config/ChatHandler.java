@@ -1,7 +1,6 @@
 package com.dauducbach.chat_service.configuration.chat_config;
 
 import com.dauducbach.chat_service.dto.request.MessageRequest;
-import com.dauducbach.chat_service.dto.request.PingRequest;
 import com.dauducbach.chat_service.service.EncodingUtils;
 import com.dauducbach.chat_service.service.MessageService;
 import com.dauducbach.chat_service.service.PresenceService;
@@ -10,8 +9,6 @@ import lombok.RequiredArgsConstructor;
 import lombok.experimental.FieldDefaults;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.context.annotation.Configuration;
-import org.springframework.messaging.handler.annotation.MessageMapping;
-import org.springframework.messaging.handler.annotation.Payload;
 import org.springframework.web.reactive.socket.WebSocketHandler;
 import org.springframework.web.reactive.socket.WebSocketMessage;
 import org.springframework.web.reactive.socket.WebSocketSession;
@@ -36,7 +33,7 @@ public class ChatHandler implements WebSocketHandler {
         presenceService.setOnline(userId).subscribe();
 
         return session.receive()
-                .doOnSubscribe(sub -> log.info("Start listening for messages"))
+                .doOnSubscribe(subscription -> log.info("Start listening for messages"))
                 .doOnNext(msg -> log.info("Raw WebSocketMessage: {}", msg))
                 .map(WebSocketMessage::getPayloadAsText)
                 .doOnNext(payload -> log.info("Received payload: {}", payload))

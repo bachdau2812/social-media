@@ -11,7 +11,6 @@ import java.text.ParseException;
 
 @Component
 public class CustomJwtDecoder implements ReactiveJwtDecoder {
-
     @Override
     public Mono<Jwt> decode(String token) throws JwtException {
         try {
@@ -24,10 +23,9 @@ public class CustomJwtDecoder implements ReactiveJwtDecoder {
                     signedJWT.getHeader().toJSONObject(),
                     signedJWT.getJWTClaimsSet().getClaims()
             );
-
             return Mono.just(jwt);
         } catch (ParseException e) {
-            throw new RuntimeException(e);
+            return Mono.error(new JwtException("Invalid token"));
         }
     }
 }

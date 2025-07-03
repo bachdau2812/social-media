@@ -4,7 +4,23 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="a39cb24a-cb66-4dd2-b927-321544ab854f" name="Changes" comment="" />
+    <list default="true" id="a39cb24a-cb66-4dd2-b927-321544ab854f" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/api-gateway/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/api-gateway/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/api-gateway/src/main/java/com/dauducbach/api_gateway/configuration/AuthenticationFilter.java" beforeDir="false" afterPath="$PROJECT_DIR$/api-gateway/src/main/java/com/dauducbach/api_gateway/configuration/AuthenticationFilter.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/api-gateway/src/main/java/com/dauducbach/api_gateway/service/RateLimiterService.java" beforeDir="false" afterPath="$PROJECT_DIR$/api-gateway/src/main/java/com/dauducbach/api_gateway/service/RateLimiterService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/chat-service/src/main/java/com/dauducbach/chat_service/configuration/CustomJwtDecoder.java" beforeDir="false" afterPath="$PROJECT_DIR$/chat-service/src/main/java/com/dauducbach/chat_service/configuration/CustomJwtDecoder.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/chat-service/src/main/java/com/dauducbach/chat_service/configuration/chat_config/ChatHandler.java" beforeDir="false" afterPath="$PROJECT_DIR$/chat-service/src/main/java/com/dauducbach/chat_service/configuration/chat_config/ChatHandler.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/chat-service/src/main/java/com/dauducbach/chat_service/service/PresenceMonitorService.java" beforeDir="false" afterPath="$PROJECT_DIR$/chat-service/src/main/java/com/dauducbach/chat_service/service/PresenceMonitorService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/feed-service/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/feed-service/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/identity-service/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/identity-service/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/identity-service/src/main/java/com/dauducbach/identity_service/configuration/CustomJwtDecoder.java" beforeDir="false" afterPath="$PROJECT_DIR$/identity-service/src/main/java/com/dauducbach/identity_service/configuration/CustomJwtDecoder.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/match-service/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/match-service/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/notification-service/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/notification-service/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/post-service/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/post-service/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/profile-service/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/profile-service/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/search-service/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/search-service/pom.xml" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -18,6 +34,21 @@
       </list>
     </option>
   </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="GitHubPullRequestSearchHistory">{
+  &quot;lastFilter&quot;: {
+    &quot;state&quot;: &quot;OPEN&quot;,
+    &quot;assignee&quot;: &quot;bachdau2812&quot;
+  }
+}</component>
+  <component name="GithubPullRequestsUISettings">{
+  &quot;selectedUrlAndAccountId&quot;: {
+    &quot;url&quot;: &quot;https://github.com/bachdau2812/social-media.git&quot;,
+    &quot;accountId&quot;: &quot;b9e48410-c660-434b-b20c-b1253f304bca&quot;
+  }
+}</component>
   <component name="ProblemsViewState">
     <option name="selectedTabId" value="DEPENDENCY_CHECKER_PROBLEMS_TAB" />
   </component>
@@ -29,41 +60,46 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;Application.ApiGatewayApplication.executor&quot;: &quot;Run&quot;,
-    &quot;Application.ChatServiceApplication.executor&quot;: &quot;Run&quot;,
-    &quot;Application.ErrorHandlersControlFlow.executor&quot;: &quot;Run&quot;,
-    &quot;Application.FeedServiceApplication.executor&quot;: &quot;Run&quot;,
-    &quot;Application.HotAndColdStream.executor&quot;: &quot;Run&quot;,
-    &quot;Application.IdGenerator.executor&quot;: &quot;Run&quot;,
-    &quot;Application.IdentityServiceApplication.executor&quot;: &quot;Run&quot;,
-    &quot;Application.MatchServiceApplication.executor&quot;: &quot;Run&quot;,
-    &quot;Application.Merge.executor&quot;: &quot;Run&quot;,
-    &quot;Application.Merge_Zip.executor&quot;: &quot;Run&quot;,
-    &quot;Application.NotificationServiceApplication.executor&quot;: &quot;Run&quot;,
-    &quot;Application.PostServiceApplication.executor&quot;: &quot;Run&quot;,
-    &quot;Application.ProfileServiceApplication.executor&quot;: &quot;Run&quot;,
-    &quot;Application.Retry.executor&quot;: &quot;Run&quot;,
-    &quot;Application.SearchServiceApplication.executor&quot;: &quot;Run&quot;,
-    &quot;Application.Test.executor&quot;: &quot;Run&quot;,
-    &quot;Application.TimeOut_First.executor&quot;: &quot;Run&quot;,
-    &quot;Maven.chat-service [clean].executor&quot;: &quot;Run&quot;,
-    &quot;Maven.feed-service [clean].executor&quot;: &quot;Run&quot;,
-    &quot;Maven.identity-service [clean].executor&quot;: &quot;Run&quot;,
-    &quot;Maven.identity-service [validate].executor&quot;: &quot;Run&quot;,
-    &quot;Maven.notification-service [clean].executor&quot;: &quot;Run&quot;,
-    &quot;Maven.post-service [clean].executor&quot;: &quot;Run&quot;,
-    &quot;Maven.profile-service [clean].executor&quot;: &quot;Run&quot;,
-    &quot;Maven.search-service [clean].executor&quot;: &quot;Run&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
-    &quot;last_opened_file_path&quot;: &quot;D:/Learning/Javaaa/Learn_Backend/Spring_WebFlux/social_app/match-service/src/main/java/com/dauducbach/match_service/configuration&quot;,
-    &quot;project.structure.last.edited&quot;: &quot;Libraries&quot;,
-    &quot;project.structure.proportion&quot;: &quot;0.0&quot;,
-    &quot;project.structure.side.proportion&quot;: &quot;0.0&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "Application.ApiGatewayApplication.executor": "Run",
+    "Application.ChatServiceApplication.executor": "Run",
+    "Application.ErrorHandlersControlFlow.executor": "Run",
+    "Application.FeedServiceApplication.executor": "Run",
+    "Application.HotAndColdStream.executor": "Run",
+    "Application.IdGenerator.executor": "Run",
+    "Application.IdentityServiceApplication.executor": "Run",
+    "Application.MatchServiceApplication.executor": "Debug",
+    "Application.Merge.executor": "Run",
+    "Application.Merge_Zip.executor": "Run",
+    "Application.NotificationServiceApplication.executor": "Run",
+    "Application.PostServiceApplication.executor": "Run",
+    "Application.ProfileServiceApplication.executor": "Run",
+    "Application.Retry.executor": "Run",
+    "Application.SearchServiceApplication.executor": "Run",
+    "Application.Test.executor": "Run",
+    "Application.TimeOut_First.executor": "Run",
+    "Maven.api-gateway [clean].executor": "Run",
+    "Maven.chat-service [clean].executor": "Run",
+    "Maven.feed-service [clean].executor": "Run",
+    "Maven.identity-service [clean].executor": "Run",
+    "Maven.identity-service [validate].executor": "Run",
+    "Maven.notification-service [clean].executor": "Run",
+    "Maven.post-service [clean].executor": "Run",
+    "Maven.profile-service [clean].executor": "Run",
+    "Maven.search-service [clean].executor": "Run",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "RunOnceActivity.git.unshallow": "true",
+    "com.intellij.ide.FileNotInSourceRootChecker.no.check": "true",
+    "git-widget-placeholder": "main",
+    "kotlin-language-version-configured": "true",
+    "last_opened_file_path": "D:/Learning/Javaaa/Learn_Backend/Spring_WebFlux/social_app",
+    "project.structure.last.edited": "Project",
+    "project.structure.proportion": "0.15",
+    "project.structure.side.proportion": "0.33678162",
+    "settings.editor.selected.configurable": "advanced.settings"
   }
-}</component>
+}]]></component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="D:\Learning\Javaaa\Learn_Backend\Spring_WebFlux\social_app\match-service\src\main\java\com\dauducbach\match_service\configuration" />
@@ -76,11 +112,11 @@
       <recent name="com.dauducbach" />
     </key>
     <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="com.dauducbach.chat_service.configuration" />
       <recent name="com.dauducbach.match_service.entity" />
       <recent name="com.dauducbach.match_service.configuration" />
       <recent name="com.dauducbach.match_service.dto.response" />
       <recent name="com.dauducbach.match_service.service" />
-      <recent name="com.dauducbach.search_service.configuration" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -90,8 +126,10 @@
       </set>
     </option>
   </component>
-  <component name="RunManager" selected="Application.ApiGatewayApplication">
+  <component name="RunManager" selected="Application.ChatServiceApplication">
     <configuration name="ApiGatewayApplication" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="ALTERNATIVE_JRE_PATH" value="21" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="true" />
       <option name="MAIN_CLASS_NAME" value="com.dauducbach.api_gateway.ApiGatewayApplication" />
       <module name="api-gateway" />
       <extension name="coverage">
@@ -104,9 +142,9 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="NotificationServiceApplication" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.dauducbach.NotificationServiceApplication" />
-      <module name="notification-service" />
+    <configuration name="ChatServiceApplication" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.dauducbach.ChatServiceApplication" />
+      <module name="chat-service" />
       <extension name="coverage">
         <pattern>
           <option name="PATTERN" value="com.dauducbach.*" />
@@ -117,9 +155,9 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="PostServiceApplication" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.dauducbach.PostServiceApplication" />
-      <module name="post-service" />
+    <configuration name="MatchServiceApplication" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.dauducbach.MatchServiceApplication" />
+      <module name="match-service" />
       <extension name="coverage">
         <pattern>
           <option name="PATTERN" value="com.dauducbach.*" />
@@ -157,19 +195,19 @@
       </method>
     </configuration>
     <list>
-      <item itemvalue="Application.ApiGatewayApplication" />
       <item itemvalue="Application.ProfileServiceApplication" />
-      <item itemvalue="Application.NotificationServiceApplication" />
-      <item itemvalue="Application.PostServiceApplication" />
       <item itemvalue="Application.SearchServiceApplication" />
+      <item itemvalue="Application.ApiGatewayApplication" />
+      <item itemvalue="Application.ChatServiceApplication" />
+      <item itemvalue="Application.MatchServiceApplication" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.ChatServiceApplication" />
         <item itemvalue="Application.ApiGatewayApplication" />
-        <item itemvalue="Application.SearchServiceApplication" />
         <item itemvalue="Application.ProfileServiceApplication" />
-        <item itemvalue="Application.PostServiceApplication" />
-        <item itemvalue="Application.NotificationServiceApplication" />
+        <item itemvalue="Application.SearchServiceApplication" />
+        <item itemvalue="Application.MatchServiceApplication" />
       </list>
     </recent_temporary>
   </component>
@@ -182,6 +220,27 @@
       <option name="presentableId" value="Default" />
       <updated>1747923376692</updated>
     </task>
+    <task id="LOCAL-00001" summary="Add signature verifier">
+      <option name="closed" value="true" />
+      <created>1750517044240</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1750517044240</updated>
+    </task>
+    <task id="LOCAL-00002" summary="Add signature verifier">
+      <option name="closed" value="true" />
+      <created>1750517415371</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1750517415371</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="Add signature verifier" />
+    <option name="LAST_COMMIT_MESSAGE" value="Add signature verifier" />
   </component>
 </project>

@@ -1,6 +1,12 @@
 package com.dauducbach.identity_service.configuration;
 
+import com.nimbusds.jose.JOSEException;
+import com.nimbusds.jose.JWSVerifier;
+import com.nimbusds.jose.crypto.MACVerifier;
 import com.nimbusds.jwt.SignedJWT;
+import lombok.RequiredArgsConstructor;
+import lombok.experimental.NonFinal;
+import org.springframework.beans.factory.annotation.Value;
 import org.springframework.security.oauth2.jwt.Jwt;
 import org.springframework.security.oauth2.jwt.JwtException;
 import org.springframework.security.oauth2.jwt.ReactiveJwtDecoder;
@@ -10,6 +16,7 @@ import reactor.core.publisher.Mono;
 import java.text.ParseException;
 
 @Component
+
 public class CustomJwtDecoder implements ReactiveJwtDecoder {
     @NonFinal
     @Value("${jwt.signerKey}")
@@ -34,7 +41,7 @@ public class CustomJwtDecoder implements ReactiveJwtDecoder {
             );
 
             return Mono.just(jwt);
-        } catch (ParseException e) {
+        } catch (ParseException | JOSEException e) {
             throw new RuntimeException(e);
         }
     }

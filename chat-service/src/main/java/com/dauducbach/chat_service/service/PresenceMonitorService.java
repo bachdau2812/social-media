@@ -27,7 +27,7 @@ public class PresenceMonitorService implements ApplicationListener<ApplicationRe
                 .flatMap(userId ->
                         presenceService.getLastSeen(userId)
                                 .filter(lastSeen -> Duration.between(lastSeen, Instant.now()).compareTo(Duration.ofSeconds(30)) > 0)
-                                .flatMap(expired -> presenceService.setOffline(userId))
+                                .flatMap(instant -> presenceService.setOffline(userId))
                 )
                 .subscribe();
     }
